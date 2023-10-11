@@ -16,14 +16,14 @@
 
 	if (isset($anmelden)) {
     /************** Abfrage ob überhaupt was übergeben wurde **************/
-    if (isset($username) && isset($password)) {
+    if (!empty($username) && !empty($password)) {
       // versuchen, sich einzuloggen
       if (tryLogin($username, $password)) {
         if ($_COOKIE['consent'] == 'all') {
           setcookie('username', $username, time() + (86400 * 30), "/");
         }
         // Führt dich wieder zur gezwungenen Anmeldeseite
-        header("Location: ".$_GET['location']);
+        header("Location: https://".$_SERVER['SERVER_NAME']);
       } else {
         $log = 'Falsches Passwort oder Username';
       }

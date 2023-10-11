@@ -7,8 +7,9 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
   try {
     $pdo = new PDO('mysql:host=10.35.46.104:3306;dbname=k208538_alex_glaser;charset=utf8', 'k208538_alexglaser', 'uI%4m355x');
     $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+    // echo "Verbindung erfolgreich";
   } catch (Exception $e) {
-      echo "Verbindung fehlgeschlagen!<br><br>$e";
+    echo "Verbindung fehlgeschlagen!<br><br>$e";
   }
 }
 

@@ -1,4 +1,5 @@
 <?php
-if (!isset($_COOKIE['username'])) {
-    header('Location: /fitcheck/login/index.php?location='.$_SERVER['PHP_SELF']);
+if (empty($_COOKIE['username'])) {
+    echo $_SERVER['PHP_SELF'];
+    header('Location: https://'.$_SERVER['SERVER_NAME'].'/login');
 }
