@@ -1,3 +1,4 @@
+<?php require("../inc/db_init.php"); ?>
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -5,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/loginstyle.css">
-  <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <title>Registrieren</title>
   </head>
   <body class="body">
@@ -20,10 +20,9 @@
         $errMessage = "Username und Passwort darf nicht identisch sein";
       } else {
         try {
-          require("../inc/db_init.php");
           $passwordhash = password_hash($password, PASSWORD_BCRYPT);
-          $sql = "INSERT INTO alexglaserLogin VALUES (\"$username\", \"$passwordhash\")"; 
-          mysqli_query($link, $sql);
+          $sql = "INSERT INTO alexglaserLogin VALUES ('', \"$username\", \"$passwordhash\")"; 
+          $pdo->query($sql);
           header("Location: ./index.php?u=$username&p=$password");
         } catch (Exception $e) {
           $errMessage = "Username schon vergeben";

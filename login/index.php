@@ -1,4 +1,4 @@
-<?php require_once "../inc/db_init.php"; ?>
+<?php require "../inc/db_init.php"; ?>
 <!DOCTYPE html>
 <html lang="de">
   <head>
@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link rel="stylesheet" href="../css/loginstyle.css">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
   <title>Login</title>
   </head>
 <?php
@@ -24,7 +23,7 @@
           setcookie('username', $username, time() + (86400 * 30), "/");
         }
         // Führt dich wieder zur gezwungenen Anmeldeseite
-        header("Location: ../".$_GET['location']);
+        header("Location: ".$_GET['location']);
       } else {
         $log = 'Falsches Passwort oder Username';
       }
@@ -36,12 +35,12 @@
       <h1>Login</h1>
       <form action="" method="POST">
         <div class="txt_field">
-          <input type="text" name="username" value="<?= htmlspecialchars($_GET['u']) ?>" required autofocus>
+          <input type="text" name="username" value="<?= htmlspecialchars(@$_GET['u']) ?>" required autofocus>
           <span></span>
           <label>Username</label>
         </div>
         <div class="txt_field">
-          <input type="password" name="password" value="<?= htmlspecialchars($_GET['p']) ?>" required>
+          <input type="password" name="password" value="<?= htmlspecialchars(@$_GET['p']) ?>" required>
           <span></span>
           <label>Passwort</label>
         </div>

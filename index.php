@@ -1,6 +1,6 @@
 <?php
 require "./inc/db_init.php";
-//require "./inc/checkLogin.php";
+require "./inc/checkLogin.php";
 ?>
 <!DOCTYPE html>
 <html lang="de">

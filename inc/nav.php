@@ -7,12 +7,9 @@
       <div class='menu-button'></div>
     </label>
     <ul class="menu">
-      <a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/home">Home</a>
-      <a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/games">Games</a>
-      <a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/referenzen">Referenzen</a>
-      <a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>/kontakt">Kontakt</a>
-      <a href="https://vchat.alex-glaser.de" target="vChat">Chat</a>
-      <a href="./?cookie=reset">Cookie ändern</a>
+      <a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>?jahreszeit=sommer">Sommer</a>
+      <a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>?jahreszeit=herbst">Herbst</a>
+      <a href="https://<?php echo $_SERVER['SERVER_NAME']; ?>?jahreszeit=winter">Winter</a>
       <?php
 
         if ($_COOKIE['username'] == 'admin' || $_SESSION['username'] == 'admin') {
