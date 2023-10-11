@@ -20,6 +20,7 @@
       // versuchen, sich einzuloggen
       if (tryLogin($username, $password)) {
         setcookie('username', $username, time() + (86400 * 30), "/");
+        header('Location: ../');
       } else {
         $log = 'Falsches Passwort oder Username';
       }
