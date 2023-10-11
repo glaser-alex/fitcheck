@@ -19,7 +19,7 @@
           echo "<a style='color: lime;' href='https://".$_SERVER['SERVER_NAME']."/administration?action=anzeigen'>Login Tabelle anzeigen</a>";
         }
       ?>
-      <span class="space-line"></span>
+      <a class="space-line"></a>
       <?php
         if (!isset($_COOKIE['username'])) {
           echo "<a href='https://".$_SERVER['SERVER_NAME']."/login'>Login</a>";

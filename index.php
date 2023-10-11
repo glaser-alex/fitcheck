@@ -28,7 +28,7 @@
 
         .the-title {
             padding: 5px;
-            font-size: 3em;
+            font-size: 2em;
             text-align: center; 
         }
     </style>
