@@ -1,6 +1,6 @@
 <?php
-require "./inc/db_init.php";
-require "./inc/checkLogin.php";
+// require "./inc/db_init.php";
+// require "./inc/checkLogin.php";
 ?>
 <!DOCTYPE html>
 <html lang="de">
@@ -43,8 +43,11 @@ require "./inc/checkLogin.php";
     </style>
 </head>
 <body>
+
+<?php include_once "./inc/nav.php" ?>
+
 <div class="the-box">
-	<img src="./logo.png" width="200">
+	<img src="./img/logo.png" width="200">
     <div class="the-title">Hier entsteht FitCheck</div>
 </div>
 </body>
