@@ -3,7 +3,7 @@
   width: 100%;
   color: #FFF;
   display: flex;
-  position: fixed;
+  position: fixed; top: 0; left: 0;
   height: fit-content;
   min-height: 50px;
   flex-direction: row;
