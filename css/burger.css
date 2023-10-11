@@ -4,7 +4,7 @@
   color: #FFF;
   display: flex;
   min-height: 50px;
-  background: #fff;
+  background: var(--white);
   height: fit-content;
   flex-direction: row;
   align-items: center;
@@ -40,13 +40,11 @@
   font-weight: bold;
   margin-right: 10px;
   color: #aaa;
-  transition: color, border-bottom 0.3s;
-  border-bottom: 1px solid transparent;
+  transition: color 0.3s;
 }
 
 .menu a:hover {
   color: var(--nav-hover-color);
-  border-bottom: 1px solid var(--nav-hover-color);
 }
 
 .menu > a:last-child {
@@ -155,8 +153,4 @@
   #menu-toggle:checked ~ .menu a:last-child {
     border: 0;
   }
-}
-
-:root {
-  --nav-hover-color: #555;
 }

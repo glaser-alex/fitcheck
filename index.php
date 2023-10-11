@@ -8,20 +8,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/burger.css" type="text/css">
-    <!-- <link rel="stylesheet" href="./css/style.css" type="text/css"> -->
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
     <title>Hier entsteht FitCheck</title>
     <style>
         @font-face {
             font-family: Ubuntu;
             src: url(./font/Ubuntu/Ubuntu-Light.ttf);
-        }
-        html {
-            width: 100%;
-            height: 100%;
-            background-color: #88001b;
-            color: #fff;
-            font-family: Ubuntu, GeoSlb712MdBT, Georgia, serif;
-            font-style: normal;
         }
 
         .the-box {

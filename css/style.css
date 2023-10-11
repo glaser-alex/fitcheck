@@ -18,8 +18,10 @@
 }
 
 :root {
-  --body-bg: #eee;
+  --prim: #d8d8d8;
+  --sec: #88001b;
   --white: #fff;
+  --nav-hover-color: #555;
 }
 
 * {
@@ -29,14 +31,17 @@
   /* border: 1px solid black; */
 }
 
+html {
+  color: var(--white);
+  background-color: var(--sec);
+  font-family: Ubuntu, JetBrain, 'Century Gothic', 'Corbel Light', 'Segoe UI Light', sans-serif, Arial;
+}
+
 body {
   border: 0;
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: sans-serif, Arial;
-  font-family: Ubuntu, JetBrain, 'Century Gothic', 'Corbel Light', 'Segoe UI Light', Arial, sans-serif;
-  background-color: var(--body-bg);
 }
 
 label {
