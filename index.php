@@ -39,9 +39,6 @@
             font-size: 3em;
             text-align: center; 
         }
-		img {
-			border-radius: 30px
-		}
     </style>
 </head>
 <body>
@@ -49,7 +46,7 @@
 <?php include_once "./inc/nav.php" ?>
 
 <div class="the-box">
-	<img src="./img/logo.png" width="200">
+	<img style="border-radius: 30px;" src="./img/logo.png" width="200">
     <div class="the-title">Hier entsteht FitCheck</div>
 </div>
 </body>
