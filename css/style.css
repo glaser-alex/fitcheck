@@ -20,6 +20,7 @@
 :root {
   --prim: #d8d8d8;
   --sec: #88001b;
+  --sec-light: #88001b77;
   --white: #fff;
   --nav-hover-color: #555;
 }
