@@ -1,6 +1,6 @@
 <nav class="top-nav">
     <a href="https://<?= $_SERVER['SERVER_NAME']; ?>/home">
-      <img src="https://<?= $_SERVER['SERVER_NAME']; ?>/img/logo.png" alt="logo" height="50">
+      <img src="https://<?= $_SERVER['SERVER_NAME']; ?>/favicon.ico" alt="logo" height="50">
     </a>
     <input id="menu-toggle" type="checkbox">
     <label class='menu-button-container' for="menu-toggle">
