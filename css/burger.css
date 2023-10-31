@@ -9,7 +9,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: fixed; top: 0; left: 0;
+  position: sticky; top: 0; left: 0;
 }
 
 .top-nav img {
@@ -153,5 +153,8 @@
   }
   #menu-toggle:checked ~ .menu a:last-child {
     border: 0;
+  }
+  .space-line {
+    display: none !important;
   }
 }

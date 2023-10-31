@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/burger.css" type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <title>Hier entsteht FitCheck</title>
+    <title>FitCheck</title>
     <style>
         @font-face {
             font-family: Ubuntu;
@@ -37,6 +37,7 @@
             font-size: 2em;
             text-align: center; 
         }
+
         @media (max-width: 700px) {
             .the-logo {
                 width: 100px;
@@ -51,7 +52,8 @@
 
 <div class="the-box">
 	<img class="the-logo" src="./img/logo.png">
-    <div class="the-title">Hier entsteht FitCheck</div>
+    <div class="the-title">Willkommen zu FitCheck</div>
 </div>
+
 </body>
 </html>
